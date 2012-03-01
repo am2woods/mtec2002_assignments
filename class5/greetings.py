@@ -13,3 +13,13 @@ Hello Dave
 Hello Sue
 Hello James
 """
+
+names = ['Ken', 'Ryu', 'Ehonda', 'Chun-li']
+
+names.append('Cammy')
+
+print len(names)
+
+for c in names:
+	print "Hello %s" %(c)
+
