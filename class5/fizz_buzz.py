@@ -21,3 +21,15 @@ fizzbuzz
 .
 .
 """
+
+a = range(100)
+
+for c in a:
+	if c % 3 == 0 and c % 5 == 0:
+		print "fizzbuzz"
+	elif c % 5 == 0:
+		print "Buzz"
+	elif c % 3 == 0:
+		print "Fizz"
+	else:
+		print c
