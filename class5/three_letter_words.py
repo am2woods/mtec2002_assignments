@@ -14,10 +14,10 @@ Three letter words: ['dog', 'cat', 'pig']
 """
 words = ["cat", "dog", "lizard", "hawk", "pig", "ibek"]
 
-three_letter_words = []
+three_letter_words = [(x) for x in words if len(x) == 3]
 
-for c in words:
+"""for c in words:
 	if len(c) == 3:
-		three_letter_words.append(c)
+		three_letter_words.append(c)"""
 	
 print "Words: %s and Three letter words: %s" %(words, three_letter_words)
