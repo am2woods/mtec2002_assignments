@@ -17,12 +17,13 @@ Big numbers: [6, 7, 8, 9]
 """
 
 numbers = range(10)
-big_numbers = []
 
-for c in numbers:
+big_numbers = [(x) for x in numbers if x > 5]
+
+
+"""for c in numbers:
 	if c > 5:
 		big_numbers.append(c)
-		
-print "all numbers %s" %(numbers)
+		print "all numbers %s" %(numbers)"""
 
 print big_numbers 
