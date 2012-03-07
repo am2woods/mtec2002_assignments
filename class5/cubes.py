@@ -15,9 +15,9 @@ Cubes: [0, 1, 8, 27]
 
 numbers = range(10)
 
-cubes = []
+cubes = [(x*x*x) for x in numbers]
 
-for c in numbers:
-	 cubes.append(c*c*c) 
+"""for c in numbers:
+	 cubes.append(c*c*c)"""
 	 
 print "Numbers: %s and Cubes: %s" %(numbers, cubes)
