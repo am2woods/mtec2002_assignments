@@ -19,35 +19,65 @@ http://docs.python.org/library/stdtypes.html#mapping-types-dict
 """
 # create an empty dictionary, set it to a variable named empty
 
+empty = {}
+
 # print out the empty dictionary
+
+print empty 
 
 # create a dictionary that describes a pineapple using the keys name, type, and taste
 
+food1 = {"name":"pineapple", "type":"fruit", "taste":"sweet"}
+
 # print out the dictionary 
+
+print food1 
 
 # create another dictionary that describes a lemon using the keys name, type, and taste
 
+food2 = {"name":"lemon", "type":"fruit", "taste":"sour"}
+
 # print out the dictionary 
+
+print food2
 
 # print out the value at key name
 
+print food2["name"]
+
+
 # create a new key, color, by  using the new key and assigning it to a variable
+
+food2["color"] = "yellow"
 
 # print the value at the new key
 
+print food2
+
 # print the dictionary
+
 
 # create a dictionary of four of your favorite things using the keys color, food, animal, and number
 
+my_favs = {"color":"yellow", "food":"pie", "animal":"cat", "number":7}
+
 # print out the dictionary
+
+print my_favs
 
 # print out your favorite color
 
+print my_favs["color"]
+
 # print out your favorite number
 
-# print out your favorite animal
+print my_favs["number"]
 
+# print out your favorite animal
+print my_favs["animal"]
 # print out your favorite animal and color in a sentence
+
+print "my favourite animal is %s and my favourite colour is %s" %(my_favs["animal"], my_favs["color"]
 
 # change your favorite number
 
@@ -61,13 +91,21 @@ http://docs.python.org/library/stdtypes.html#mapping-types-dict
 
 # try printing an item with a key that doesn't exist
 
+#my_favs["programming Language"]
+
 # what happened?  comment out your previous line to continue
 
 # you can also use the get method on a dictionary to retrieve an element, but have a default value if the key doesn't exist
 
+#print my_favs.get("programming language","javascript")
+
 # just like a list, you can use the del statement to delete a dictionary item
 
+#Del my_favs["numbers"]
+
 # print out the dictionary after deleting an element
+
+#print my_favs
 
 # get the list of keys in your dictionary using the keys method, set it to a variable named my_keys
 
