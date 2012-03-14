@@ -15,9 +15,18 @@ binary_search.py
 Some test output follows!
 """
 def search(sorted_list, value):
-	# implement your algorithm here
-	# defaulting to not found
-	return -1
+	last = len(my_sorted_list[])
+	first = 1
+	while first = last:
+		middle = (first + last)/2
+		if my_sorted_list[middle] = value:
+			return middle
+		elif if my_sorted_list[middle] < value:
+			first = middle + 1
+		elif if my_sorted_list[middle] > value:
+			first = middle - 1
+		else:
+	return "Not found"
 		
 # some tests (we'll learn about automated testing later...)
 my_sorted_list =[7, 32, 65]
