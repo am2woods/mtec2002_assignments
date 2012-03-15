@@ -46,34 +46,63 @@ print about_me["favorite_food"]
 
 # print out your your first_name and your number_of_teeth using the dictionary you created in a sentence... example: "Joe has 100 teeth"
 
-print "%s has %s teeth" % (about_me["first_name"], about_me["#_of_teeth"]
+print "%s has %s teeth" % (about_me["first_name"], about_me["#_of_teeth"])
 
 # change your favorite food
 
+about_me["favorite_food"] = "lasagna"
+
 # print out your dictionary
+
+print about_me["favorite_food"] 
 
 # try printing an item with a key that doesn't exist, like "hair_color"
 
-# what happened?  comment out your previous line to continue
+#print about_me["hair_color"]
 
+# what happened?  comment out your previous line to continue
+#The key error happened
 # use the get method to get "hair_color", but default to "green" as the value; assign to a variable called hair
+
+hair = about_me.get("hair_color", "green")
+print hair
 
 # just like a list, you can use the del statement to delete a dictionary item; delete the key and value at "eye_color"
 
+del about_me["eye_color"]
+
 # print out the dictionary after deleting an element
+
+print about_me
 
 # get the list of keys in your dictionary using the keys method, set it to a variable named my_keys
 
+my_keys = about_me.keys()
+
 # print out the keys
+
+print my_keys
 
 # get the list of values in your dictionary using the values method, set it to a variable named my_values
 
+my_values = about_me.values()
+
 # print out the values
+
+print my_values 
 
 # get all of the key, value pairs of your dictionary as a list of tuples using the items method; set it to a variable called tuples
 
+tuples = about_me.items()
+
 # print out this list
+
+print tuples 
 
 # create a new key called hours_of_sleep by using the new key and setting it equal to a value
 
+about_me["hours_of_sleep"] = -2.78
+
 # print out the person dictionary again
+
+print about_me
