@@ -31,3 +31,15 @@ Guess the number I'm thinking of...
 > quit
 Bye!
 """
+
+secret_number = 7
+
+while True:
+	user_input = raw_input("> ")
+	if user_input = "quit":
+		exit()
+	elif secret_number == int(user_input):
+		print "You got it!"
+		exit()
+	
+	

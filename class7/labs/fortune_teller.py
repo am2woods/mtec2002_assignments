@@ -14,3 +14,11 @@ you have a lot of tabs in your future
 $ python fortune_teller.py 
 you have a lot of tabs in your future
 """
+
+import random 
+
+fortunes = ['you will write a program', 'you have a lot of tabs in your future', 'boo!']
+
+index = random.randint(0, 2)
+
+print fortunes[index]

@@ -54,3 +54,46 @@ tree =  """
     ||
 """
 
+tree = """
+    /\\
+   /  \\
+   /  \\
+  /____\\
+    ||
+"""
+
+truck = """
+      __
+ ____|  \_    
+|_________|
+  O     O
+"""
+
+heart = """
+  __  __
+ /  \/  \\
+  \    /
+    \/
+"""
+
+help = "Typing truck prints: %s, Typing heart prints: %s,Typing truck prints: %s" % (truck, heart, tree)
+
+while True:
+	print "What picture should I draw"
+	print "Type help to see appropriate drawings"
+	user_input = raw_input()
+	if user_input == "tree":
+		print tree
+	elif user_input == "truck":
+		print truck
+	elif user_input == "heart":
+		print heart
+	elif user_input == "quit":
+		print exit()
+	elif user_input == "help":
+		print help
+	else:
+		print "please use the 'help' command for approriate drawings"
+		
+
+		

@@ -26,15 +26,27 @@ joe has 100 teeth
 """
 # create an empty dictionary, set it to a variable named empty
 
+empty = {}
+
 # print out the empty dictionary
+
+print empty
 
 # create a dictionary about yourself with the follow keys: first_name, last_name, favorite_food, eye_color, and number_of_teeth; assign it to a variable called person 
 
+about_me = {"first_name":"Ahmad","last_name":"Woods","favorite_food":"baked_zitti","eye_color":"dark_brown","#_of_teeth":"32"}
+
 # print out the dictionary
+
+print about_me
 
 # print out your favorite_food
 
+print about_me["favorite_food"]
+
 # print out your your first_name and your number_of_teeth using the dictionary you created in a sentence... example: "Joe has 100 teeth"
+
+print "%s has %s teeth" % (about_me["first_name"], about_me["#_of_teeth"]
 
 # change your favorite food
 
