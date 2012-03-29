@@ -21,12 +21,12 @@ Try changing the following parts of this program:
 """
 import pygame
 
-FRAME_RATE = 20
+FRAME_RATE = 60
 WINDOW_WIDTH = 640
 WINDOW_HEIGHT = 480
 WINDOW_TITLE = "My Game"
 
-background_color = (255, 255, 255)
+background_color = (0, 99, 99)
 running = True
 pygame.init()
 
@@ -44,7 +44,13 @@ while running == True:
 	screen.fill(background_color)
 
 	# draw everything here!  this line draws a circle in the middle of the screen
-	pygame.draw.circle(screen, (0, 0, 200), (WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2), 10)
+	pygame.draw.circle(screen, (0, 0, 200), (WINDOW_WIDTH / 4, WINDOW_HEIGHT / 4), 10)
+	
+	"""pygame.draw.ellipse(screen, (151, 2, 167), (WINDOW_WIDTH / 4, WINDOW_HEIGHT / 4), 10)
+	
+	pygame.draw.rect(screen, (151, 2, 167), (WINDOW_WIDTH / 4, WINDOW_HEIGHT / 4), 10)
+	
+	pygame.draw.arc(screen, (151, 2, 167), (WINDOW_WIDTH / 4, WINDOW_HEIGHT / 4), 10)"""
  
 	clock.tick(FRAME_RATE)
 	pygame.display.flip()
