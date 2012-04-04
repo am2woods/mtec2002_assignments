@@ -32,6 +32,8 @@ PROGRAM
 """
 # import the bs4 module
 
+import bs4
+
 # create the following html string and assign it to a variable named unordered_list
 unordered_list = """
 <ul>
@@ -41,10 +43,15 @@ unordered_list = """
 """ 
 # create a beautiful soup object using the html above
 
+soup = bs4.BeautifulSoup(unordered_list) 
+
 # print out a formatted version of the soup object
+
+#print soup.prettify(unordered_list) 
 
 # print out the ul tag
 
+print soup.ul
 # print out the first li in the ul
 
 # print out the string that's between the first li tags

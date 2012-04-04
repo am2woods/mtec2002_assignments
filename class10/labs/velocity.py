@@ -35,3 +35,15 @@ distance: 42, time: "asdf"
 I don't think you put in two numbers.
 >
 """
+
+while True:
+	print "distance?"
+	d = raw_input('>')
+	print "time?"
+	t = raw_input('>')
+	try:
+		print float(d) / float(t)
+	except ValueError:
+		print "Improper value inputed"
+	except ZeroDivisionError:
+		print "can't divide by zero"
