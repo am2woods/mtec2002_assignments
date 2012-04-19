@@ -29,3 +29,14 @@ I don't know how to translate that
 word to translate, please
 >
 """
+
+d = {"dog":"perro","cat":"gato"}
+
+while True:
+	user_input = raw_input("what word would you like trainslated\n>")
+	
+	try:
+		print d[user_input]
+	except KeyError:
+		print "I don't know how to say that"
+		

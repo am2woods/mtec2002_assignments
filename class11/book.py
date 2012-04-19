@@ -26,3 +26,25 @@ Dune by Frank Herbert - True
 (INTERMEDIATE) Raise an exception if a book is not available, and someone tries to check it out
 	
 """
+
+class Book:
+	def __init__(self, title):
+		self.title = title
+		self.author = ""
+		self.available = True 
+	def __str__(self):
+		return "author:%s, title:%s, available:%s" % (self.author, self.title, self.available)
+	def check_out(self):
+		self.available = False 
+	def check_in(self):
+		self.available = True
+	
+a = Book("Dune")
+a.author = "Frank Herbert"
+print a.author
+print a.title
+print a.available
+
+a.check_out() 
+
+print a

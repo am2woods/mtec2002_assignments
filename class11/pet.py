@@ -22,3 +22,13 @@ meow
 meow
 >>> 
 """
+
+class Pet:
+	def __init__(self, n):
+		self.name = n
+		self.cuteness_factor = 9001
+	def __str__(self):
+		return "%s, cuteness: %s" % (self.name, self.cuteness_factor)
+		
+spot = Pet("spot")
+print spot.name
