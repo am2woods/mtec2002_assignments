@@ -17,3 +17,16 @@ spanish.py
 	...
 	# use sys.argv[1] to get the first item passed in through the commandline
 """
+
+def to_spanish(word):
+	"""this function translates stuff to spanish
+	>>> to_spanish("cat")
+	'gato'""""
+	d = {"dog":"perro","cat":"gato"}
+	return d[word]
+	
+print __name__
+
+#Only run the test if this is a script being run
+if __name__ == '__main__':
+	print to_spanish("cat")

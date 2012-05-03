@@ -7,3 +7,6 @@ shout.py
 4. Call shout (remember to use the module name as the prefix) using the commandline arguments.
 5. (Intermediate)... Hint: you'll need to get two commandline arguments separated by space if your shout function takes two paramters
 """
+import myutils
+import sys
+print myutils.shout(sys.argv[1], sys.argv[2])
